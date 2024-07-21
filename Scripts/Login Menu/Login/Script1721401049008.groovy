@@ -18,6 +18,14 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication("com.swaglabsmobileapp")
-Mobile.setText(findTestObject('Object Repository/Login/inputUsername'), username, 0)
-Mobile.setEncryptedText(findTestObject('Object Repository/Login/inputPassword'), password, 0)
-Mobile.tap(findTestObject('Object Repository/Login/btnLogin'), 0)
+if (testCaseType=='positive') {
+	Mobile.setText(findTestObject('Object Repository/Login/inputUsername'), username, 0)
+	Mobile.setEncryptedText(findTestObject('Object Repository/Login/inputPassword'), password, 0)
+	Mobile.tap(findTestObject('Object Repository/Login/btnLogin'), 0)
+}
+else {
+	Mobile.setText(findTestObject('Object Repository/Login/inputUsername'), username, 0)
+	Mobile.setEncryptedText(findTestObject('Object Repository/Login/inputPassword'), password, 0)
+	Mobile.tap(findTestObject('Object Repository/Login/btnLogin'), 0)
+	Mobile.verifyElementExist(findTestObject('Object Repository/Login/txtAlertLogin',['alert':alert]), 5, FailureHandling.CONTINUE_ON_FAILURE)
+}

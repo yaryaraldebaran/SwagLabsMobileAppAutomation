@@ -17,6 +17,18 @@
       <value></value>
       <variableId>5c5b5b76-4dbf-4174-b725-201953e63fea</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e0c97cbd-5e6f-48cf-9c70-5d946a8bc8f0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>01cb78d8-79fe-426a-842b-ab04f2aced27</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'standard_user'</defaultValue>
       <description></description>
@@ -30,5 +42,19 @@
       <id>5c5b5b76-4dbf-4174-b725-201953e63fea</id>
       <masked>false</masked>
       <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'positive'</defaultValue>
+      <description></description>
+      <id>e0c97cbd-5e6f-48cf-9c70-5d946a8bc8f0</id>
+      <masked>false</masked>
+      <name>testCaseType</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>01cb78d8-79fe-426a-842b-ab04f2aced27</id>
+      <masked>false</masked>
+      <name>alert</name>
    </variable>
 </TestCaseEntity>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS Swag Labs App</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>15c3186d-fee1-4938-a9b7-f6cce4739ae2</testSuiteGuid>
+   <testCaseLink>
+      <guid>5c165459-cd9f-4236-be9d-3e84f939208d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login Menu/Login - Negative</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>1428be76-c6c4-4ff0-9e4d-1ae94b47e530</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Login Negative</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>1428be76-c6c4-4ff0-9e4d-1ae94b47e530</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
+         <variableId>519b0e19-3b90-495d-85f5-081f9dc489f5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1428be76-c6c4-4ff0-9e4d-1ae94b47e530</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>f339f9f1-ab35-4a03-9ba8-b5fd0644d424</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1428be76-c6c4-4ff0-9e4d-1ae94b47e530</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>testCaseType</value>
+         <variableId>fd26e589-3dab-422b-aa23-2a116f948f23</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1428be76-c6c4-4ff0-9e4d-1ae94b47e530</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>alert</value>
+         <variableId>324ac26a-fc6d-49db-83b2-66869a2c6b01</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>40ef6c5d-80a8-429b-bb86-b4c433c21bed</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login Menu/Login</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4a6dacea-471f-4ada-b288-a173abba44b2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5c5b5b76-4dbf-4174-b725-201953e63fea</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e0c97cbd-5e6f-48cf-9c70-5d946a8bc8f0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>01cb78d8-79fe-426a-842b-ab04f2aced27</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

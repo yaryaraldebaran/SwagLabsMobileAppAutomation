@@ -17,5 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('Test Cases/Checkout Product'), null)
-Mobile.tap(findTestObject('Object Repository/Cart Page/btnCheckout'), 0)
+Mobile.callTestCase(findTestCase('Test Cases/Login Menu/Login'), [
+	'username':username,
+	'password':password,
+	'testCaseType':testCaseType,
+	'alert':alert
+	], FailureHandling.STOP_ON_FAILURE)

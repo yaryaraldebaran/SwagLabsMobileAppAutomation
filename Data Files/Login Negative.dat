@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Login Negative</name>
+   <tag></tag>
+   <connectionProperties/>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>a24eefe2-4ca0-468f-acb4-11e81fc6b531</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>TSLOGIN01 null qcu24s4901FyWDTwXGr6XA%3D%3D Username+is+required negative</data>
+   <data>TSLOGIN02 standard_user null Password+is+required negative</data>
+   <data>TSLOGIN03 null null Username+is+required negative</data>
+   <data>TSLOGIN04 locked_out_user qcu24s4901FyWDTwXGr6XA%3D%3D Sorry%2C+this+user+has+been+locked+out. negative</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>testDataID</name>
+      <size>4</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>username</name>
+      <size>4</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>password</name>
+      <size>4</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>3</columnIndex>
+      <name>alert</name>
+      <size>4</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>4</columnIndex>
+      <name>testCaseType</name>
+      <size>4</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

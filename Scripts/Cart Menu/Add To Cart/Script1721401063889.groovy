@@ -18,7 +18,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('Test Cases/Login'), null)
+Mobile.callTestCase(findTestCase('Test Cases/Login Menu/Login'), null)
 
 for (productName in productNames) {
 	KeywordUtil.logInfo("product name : "+productName)
