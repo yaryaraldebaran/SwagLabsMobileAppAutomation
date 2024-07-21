@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add To Cart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de3d62a1-5c90-4951-825d-3089637a883a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0b5f5728-39e8-46e7-81ff-cd7dc84b526b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>['Sauce Labs Fleece Jacket', 'Sauce Labs Bike Light', 'Sauce Labs Backpack']</defaultValue>
+      <description></description>
+      <id>0b5f5728-39e8-46e7-81ff-cd7dc84b526b</id>
+      <masked>false</masked>
+      <name>productNames</name>
+   </variable>
+</TestCaseEntity>
