@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7cc8a0cd-a576-4905-9d2f-769306898831</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e2f58068-3841-42d6-9d28-9302cb16357c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9cee13db-6b36-440a-b332-32f285d9e752</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'price'</defaultValue>
+      <description></description>
+      <id>e2f58068-3841-42d6-9d28-9302cb16357c</id>
+      <masked>false</masked>
+      <name>sortBy</name>
+   </variable>
+   <variable>
+      <defaultValue>'descending'</defaultValue>
+      <description></description>
+      <id>9cee13db-6b36-440a-b332-32f285d9e752</id>
+      <masked>false</masked>
+      <name>order</name>
+   </variable>
 </TestCaseEntity>

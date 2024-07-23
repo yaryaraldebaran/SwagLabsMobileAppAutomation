@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "E5A3AFABC75298D282A31CF06E88DD77",
+  "keywordFileContentHash": "7B87E288A0C994755F86B0362FD17853",
   "keywordClasses": [
     {
       "name": "com.swaglabsmobileapp.utils.Utils",
@@ -33,14 +33,16 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\n\t * Check if element present in timeout\n\t * @param to Katalon test object\n\t * @param timeout time to wait for element to show up\n\t * @return true if element present, otherwise false\n\t */"
         },
         {
           "name": "getCurrentSessionMobileDriver",
-          "parameters": []
+          "parameters": [],
+          "javadoc": "/**\n\t * Get mobile driver for current session\n\t * @return mobile driver for current session\n\t */"
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

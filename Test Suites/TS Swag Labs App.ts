@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>5c165459-cd9f-4236-be9d-3e84f939208d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Login Menu/Login - Negative</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -54,7 +54,7 @@
    <testCaseLink>
       <guid>40ef6c5d-80a8-429b-bb86-b4c433c21bed</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Login Menu/Login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -80,6 +80,34 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>01cb78d8-79fe-426a-842b-ab04f2aced27</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>08a80f0d-1213-4766-8759-067f958fff5a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cart Menu/Sort by Name ascending</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>bf0fda10-74cc-449c-b93c-bd8a2c15dd8d</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Sort Product</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>bf0fda10-74cc-449c-b93c-bd8a2c15dd8d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>sortBy</value>
+         <variableId>e2f58068-3841-42d6-9d28-9302cb16357c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bf0fda10-74cc-449c-b93c-bd8a2c15dd8d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>order</value>
+         <variableId>9cee13db-6b36-440a-b332-32f285d9e752</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
