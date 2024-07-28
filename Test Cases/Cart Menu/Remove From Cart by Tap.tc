@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Remove From Cart by Tap</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6a99366d-6fd8-43e6-8cbc-eada067340c1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>53581714-af23-4af8-9278-fef2a70e90a4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>['Sauce Labs Fleece Jacket', 'Sauce Labs Backpack']</defaultValue>
+      <description></description>
+      <id>53581714-af23-4af8-9278-fef2a70e90a4</id>
+      <masked>false</masked>
+      <name>productNames</name>
+   </variable>
+</TestCaseEntity>

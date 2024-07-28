@@ -49,8 +49,7 @@ if ( sortBy =='name' && order =='ascending') {
 	}else {
 		KeywordUtil.markFailed("Product name not sorted ascending")
 	}
-	Mobile.tap(findTestObject('Object Repository/General/btnMenu'), 3)
-	Mobile.tap(findTestObject('Object Repository/General/btnLogout'), 3)
+
 }
 else if ( sortBy =='name' && order =='descending') {
 	Mobile.tap(findTestObject('Object Repository/Product List/btnSortBy',['sortby':'Name (Z to A)']), 5)
@@ -61,8 +60,6 @@ else if ( sortBy =='name' && order =='descending') {
 	}else {
 		KeywordUtil.markFailed("Product name not sorted descending")
 	}
-	Mobile.tap(findTestObject('Object Repository/General/btnMenu'), 3)
-	Mobile.tap(findTestObject('Object Repository/General/btnLogout'), 3)
 }
 else if ( sortBy =='price' && order =='ascending') {
 	Mobile.tap(findTestObject('Object Repository/Product List/btnSortBy',['sortby':'Price (low to high)']), 5)
@@ -79,8 +76,6 @@ else if ( sortBy =='price' && order =='ascending') {
 	}else {
 		KeywordUtil.markFailed("Price not sorted ascending")
 	}
-	Mobile.tap(findTestObject('Object Repository/General/btnMenu'), 3)
-	Mobile.tap(findTestObject('Object Repository/General/btnLogout'), 3)
 }
 else if ( sortBy =='price' && order =='descending') {
 	Mobile.tap(findTestObject('Object Repository/Product List/btnSortBy',['sortby':'Price (high to low)']), 5)
@@ -97,9 +92,10 @@ else if ( sortBy =='price' && order =='descending') {
 	}else {
 		KeywordUtil.markFailed("Price not sorted descending")
 	}
-	Mobile.tap(findTestObject('Object Repository/General/btnMenu'), 3)
-	Mobile.tap(findTestObject('Object Repository/General/btnLogout'), 3)
+
 }
 else {
 	KeywordUtil.markWarning("Please check your order parameter")
 }
+Mobile.tap(findTestObject('Object Repository/General/btnMenu'), 3)
+Mobile.tap(findTestObject('Object Repository/General/btnLogout'), 3)

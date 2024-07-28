@@ -86,7 +86,7 @@
       <guid>08a80f0d-1213-4766-8759-067f958fff5a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Cart Menu/Sort by Name ascending</testCaseId>
+      <testCaseId>Test Cases/Cart Menu/Sort Product</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>bf0fda10-74cc-449c-b93c-bd8a2c15dd8d</id>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Remove From Cart by Swipe</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f119444a-fb50-4b6e-a1ad-8eca1db18354</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b9c7b3bf-7458-4928-9caf-4fd61a4688d2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>['Sauce Labs Fleece Jacket', 'Sauce Labs Backpack']</defaultValue>
+      <description></description>
+      <id>b9c7b3bf-7458-4928-9caf-4fd61a4688d2</id>
+      <masked>false</masked>
+      <name>productNames</name>
+   </variable>
+</TestCaseEntity>
