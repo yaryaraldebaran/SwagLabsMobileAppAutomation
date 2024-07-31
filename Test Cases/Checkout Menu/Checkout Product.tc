@@ -11,11 +11,89 @@
       <value></value>
       <variableId>6c8ea998-f51a-428c-9089-c267b80b1494</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>26cbca71-317a-4365-8d57-f36493450440</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fb9f0e03-6869-40ff-81c1-e44273efa13a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7a874aef-7652-4207-bc7e-5042e8532e60</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fe2372e7-e974-4e5a-9156-b84522c79213</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d7d60ad0-7708-4b51-a484-88ff9e86911a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d8fe963a-a4ea-46d9-88ae-360ee2c0dedc</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>['Sauce Labs Fleece Jacket', 'Sauce Labs Bike Light', 'Sauce Labs Backpack']</defaultValue>
       <description></description>
       <id>6c8ea998-f51a-428c-9089-c267b80b1494</id>
       <masked>false</masked>
       <name>productNames</name>
+   </variable>
+   <variable>
+      <defaultValue>'Mr. First'</defaultValue>
+      <description></description>
+      <id>26cbca71-317a-4365-8d57-f36493450440</id>
+      <masked>false</masked>
+      <name>firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Lastgate'</defaultValue>
+      <description></description>
+      <id>fb9f0e03-6869-40ff-81c1-e44273efa13a</id>
+      <masked>false</masked>
+      <name>lastName</name>
+   </variable>
+   <variable>
+      <defaultValue>'455666'</defaultValue>
+      <description></description>
+      <id>7a874aef-7652-4207-bc7e-5042e8532e60</id>
+      <masked>false</masked>
+      <name>zipCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'positive'</defaultValue>
+      <description></description>
+      <id>fe2372e7-e974-4e5a-9156-b84522c79213</id>
+      <masked>false</masked>
+      <name>testCaseType</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d7d60ad0-7708-4b51-a484-88ff9e86911a</id>
+      <masked>false</masked>
+      <name>alertText</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>d8fe963a-a4ea-46d9-88ae-360ee2c0dedc</id>
+      <masked>false</masked>
+      <name>isIndividualRun</name>
    </variable>
 </TestCaseEntity>

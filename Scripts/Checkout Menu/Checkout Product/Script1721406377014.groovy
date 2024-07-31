@@ -24,26 +24,31 @@ Utils util = new Utils()
 
 Mobile.callTestCase(findTestCase('Test Cases/Cart Menu/Add To Cart'), [('productNames') : productNames])
 
-int foundProducts = 0
-
-for (def productName : productNames) {
-    KeywordUtil.logInfo('product name : ' + productName)
-
-    Mobile.scrollToText(productName)
-	//there is an element remove btn that not viewed but the product name is scrolled at 
-    if (Mobile.verifyElementExist(findTestObject('Object Repository/Checkout Page/btnRemoveOnCheckout', [('productName') : productName]), 
-        3, FailureHandling.CONTINUE_ON_FAILURE)) {
-        foundProducts++
-    }else {
-		//if not found, then try to swipe screen
-		Mobile.swipe(0, 0, 0, 0)
-	}
-}
-
-Mobile.verifyElementText(findTestObject('Object Repository/Product List/txtCart'), Integer.toString(foundProducts), FailureHandling.STOP_ON_FAILURE)
-
 Mobile.scrollToText('CHECKOUT')
+
+util.getWhileScroll('//android.view.ViewGroup[@content-desc="test-CHECKOUT"]')
 
 Mobile.tap(findTestObject('Object Repository/Cart Page/btnCheckout'), 0)
 
+Mobile.setText(findTestObject('Object Repository/Checkout Page/inputFirstName'), firstName, 5)
+Mobile.setText(findTestObject('Object Repository/Checkout Page/inputLastName'),lastName,5)
+Mobile.setText(findTestObject('Object Repository/Checkout Page/inputZipPostalCode'), zipCode, 5)
 
+Mobile.tap(findTestObject('Object Repository/Checkout Page/btnContinue'), 5)
+if(testCaseType == 'positive') {
+	
+	util.getWhileScroll('//android.view.ViewGroup[@content-desc="test-FINISH"]')
+	
+	Mobile.scrollToText('FINISH')
+	Mobile.tap(findTestObject('Object Repository/Checkout Page/btnFinish'),5)
+	
+	Mobile.verifyElementExist(findTestObject('Object Repository/Checkout Page/txtThankYou'), 5, FailureHandling.STOP_ON_FAILURE)
+	Mobile.verifyElementExist(findTestObject('Object Repository/Checkout Page/txtCheckoutComplete'), 5, FailureHandling.STOP_ON_FAILURE)
+	Mobile.tap(findTestObject('Object Repository/Checkout Page/btnBackHome'), 5, FailureHandling.STOP_ON_FAILURE)
+	Mobile.verifyElementExist(findTestObject('Object Repository/Product List/txtProductPage'), 5, FailureHandling.STOP_ON_FAILURE)
+}else {
+	Mobile.verifyElementText(findTestObject('Object Repository/Checkout Page/txtAlert'), alertText,FailureHandling.STOP_ON_FAILURE)
+}
+
+Mobile.tap(findTestObject('Object Repository/General/btnMenu'), 3)
+Mobile.tap(findTestObject('Object Repository/General/btnLogout'), 3)

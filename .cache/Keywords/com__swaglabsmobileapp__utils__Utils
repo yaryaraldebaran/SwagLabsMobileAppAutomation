@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "7B87E288A0C994755F86B0362FD17853",
+  "keywordFileContentHash": "A5CFE830399AE24BAD46996226BA601C",
   "keywordClasses": [
     {
       "name": "com.swaglabsmobileapp.utils.Utils",
@@ -40,6 +40,25 @@
           "name": "getCurrentSessionMobileDriver",
           "parameters": [],
           "javadoc": "/**\n\t * Get mobile driver for current session\n\t * @return mobile driver for current session\n\t */"
+        },
+        {
+          "name": "isElementPresent",
+          "parameters": [
+            {
+              "name": "testObject",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Check if an element is present.\n\t * @param testObject The TestObject to check.\n\t * @return True if the element is present; false otherwise.\n\t */"
         }
       ]
     }

@@ -85,7 +85,7 @@
    <testCaseLink>
       <guid>08a80f0d-1213-4766-8759-067f958fff5a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Cart Menu/Sort Product</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -108,6 +108,64 @@
          <type>DATA_COLUMN</type>
          <value>order</value>
          <variableId>9cee13db-6b36-440a-b332-32f285d9e752</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>28ee4d96-6ee3-41a3-9099-9448f05ad967</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Checkout Menu/Checkout Product</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ac870ddb-d100-48e3-bb0f-a9886c01cd0d</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-4</value>
+         </iterationEntity>
+         <testDataId>Data Files/Customer Checkout Data</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6c8ea998-f51a-428c-9089-c267b80b1494</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ac870ddb-d100-48e3-bb0f-a9886c01cd0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>firstName</value>
+         <variableId>26cbca71-317a-4365-8d57-f36493450440</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ac870ddb-d100-48e3-bb0f-a9886c01cd0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>lastName</value>
+         <variableId>fb9f0e03-6869-40ff-81c1-e44273efa13a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ac870ddb-d100-48e3-bb0f-a9886c01cd0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>zipCode</value>
+         <variableId>7a874aef-7652-4207-bc7e-5042e8532e60</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ac870ddb-d100-48e3-bb0f-a9886c01cd0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>testCaseType</value>
+         <variableId>fe2372e7-e974-4e5a-9156-b84522c79213</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ac870ddb-d100-48e3-bb0f-a9886c01cd0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>alertText</value>
+         <variableId>d7d60ad0-7708-4b51-a484-88ff9e86911a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d8fe963a-a4ea-46d9-88ae-360ee2c0dedc</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -125,7 +125,7 @@ class Utils {
 				.moveTo(PointOption.point(endX, endY))
 				.release()
 				.perform()
-				
+
 		touchAction.tap(PointOption.point(startX, startY))
 				.release()
 				.perform()
@@ -164,8 +164,8 @@ class Utils {
 		}
 		return allTexts
 	}
-	
-	
+
+
 	def static boolean verifyElementNotPresentWhileScrolling(String objectPath, Map<String, String> parameters, int maxScrolls) {
 		def driver = MobileDriverFactory.getDriver()
 		TestObject testObject = new TestObject('DynamicObject')
@@ -185,7 +185,7 @@ class Utils {
 			}
 			scrollDown()
 			// Scroll in the specified direction
-			
+
 		}
 
 		// If the maximum scroll attempts are reached and the element is still found, return false
@@ -205,9 +205,9 @@ class Utils {
 			return false
 		}
 	}
-	
-	
-	
+
+
+
 	public float convertCurrencyStringToFloat(String currencyString) {
 		String numericString = currencyString.replace('$', '')
 		float floatValue = Float.parseFloat(numericString)
