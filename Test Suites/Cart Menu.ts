@@ -85,5 +85,11 @@
          <value></value>
          <variableId>953af30c-662f-47e3-8158-d540b50ba257</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>SCRIPT_VARIABLE</type>
+         <value>&quot;cart&quot;</value>
+         <variableId>e522f8e5-7144-4f3c-9d95-fa99a8707894</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

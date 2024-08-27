@@ -33,7 +33,7 @@ for (productName in productNames) {
 	Mobile.scrollToText(productName)
 	//replace following swiped button by the one button with remove tag
 	utils.swipe(findTestObject('Object Repository/Cart Page/txtProductName',['productName':productName]))
-	
+	Mobile.tap(findTestObject('Object Repository/Cart Page/btnTrash',['productName':productName]), 10)
 }
 
 for (productName in productNames) {
