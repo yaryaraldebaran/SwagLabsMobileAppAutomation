@@ -20,9 +20,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
-Mobile.callTestCase(findTestCase('Test Cases/Cart Menu/Add To Cart'), null)
-
+if (isRunAlone) {
+	Mobile.callTestCase(findTestCase('Test Cases/Cart Menu/Add To Cart'), null)
+}
 for (productName in productNames) {
 	KeywordUtil.logInfo("product name : "+productName)
 	Mobile.scrollToText(productName)

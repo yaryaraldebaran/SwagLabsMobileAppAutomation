@@ -22,7 +22,9 @@ import internal.GlobalVariable
 import org.assertj.core.api.NumberAssert
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('Test Cases/Cart Menu/Add To Cart'), null)
+if (isRunAlone) {
+	Mobile.callTestCase(findTestCase('Test Cases/Cart Menu/Add To Cart'), null)
+}
 int countSelectedProduct = Integer.parseInt(Mobile.getText(findTestObject('Object Repository/Product List/txtCart'), 5))
 KeywordUtil.logInfo('Initial products on cart : '+countSelectedProduct)
 Utils utils = new Utils()
@@ -46,3 +48,11 @@ for (productName in productNames) {
 	}
 }
 Mobile.verifyElementText(findTestObject('Object Repository/Product List/txtCart'), Integer.toString(countSelectedProduct), FailureHandling.STOP_ON_FAILURE)
+
+if (isContinue) {
+	Mobile.scrollToText('CHECKOUT')
+	utils.getWhileScroll('//android.view.ViewGroup[@content-desc="test-CHECKOUT"]')
+	Mobile.tap(findTestObject('Object Repository/Cart Page/btnCheckout'), 0)
+}else {
+	
+}

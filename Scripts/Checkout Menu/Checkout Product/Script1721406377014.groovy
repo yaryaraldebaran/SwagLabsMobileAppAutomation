@@ -30,13 +30,19 @@ util.getWhileScroll('//android.view.ViewGroup[@content-desc="test-CHECKOUT"]')
 
 Mobile.tap(findTestObject('Object Repository/Cart Page/btnCheckout'), 0)
 
+
 Mobile.setText(findTestObject('Object Repository/Checkout Page/inputFirstName'), firstName, 5)
 Mobile.setText(findTestObject('Object Repository/Checkout Page/inputLastName'),lastName,5)
 Mobile.setText(findTestObject('Object Repository/Checkout Page/inputZipPostalCode'), zipCode, 5)
 
+List<String> arrayPrice = new List()
+
+
 Mobile.tap(findTestObject('Object Repository/Checkout Page/btnContinue'), 5)
 if(testCaseType == 'positive') {
-	
+	for(productName in productNames) {
+		
+	}	
 	util.getWhileScroll('//android.view.ViewGroup[@content-desc="test-FINISH"]')
 	
 	Mobile.scrollToText('FINISH')
@@ -46,6 +52,7 @@ if(testCaseType == 'positive') {
 	Mobile.verifyElementExist(findTestObject('Object Repository/Checkout Page/txtCheckoutComplete'), 5, FailureHandling.STOP_ON_FAILURE)
 	Mobile.tap(findTestObject('Object Repository/Checkout Page/btnBackHome'), 5, FailureHandling.STOP_ON_FAILURE)
 	Mobile.verifyElementExist(findTestObject('Object Repository/Product List/txtProductPage'), 5, FailureHandling.STOP_ON_FAILURE)
+	
 }else {
 	Mobile.verifyElementText(findTestObject('Object Repository/Checkout Page/txtAlert'), alertText,FailureHandling.STOP_ON_FAILURE)
 }

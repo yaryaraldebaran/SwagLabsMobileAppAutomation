@@ -11,11 +11,37 @@
       <value></value>
       <variableId>0b5f5728-39e8-46e7-81ff-cd7dc84b526b</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d232173f-0ece-4960-8504-39921cf9dc04</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b00c782f-1fef-47ee-a224-530c3064d448</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>['Sauce Labs Fleece Jacket', 'Sauce Labs Bike Light', 'Sauce Labs Backpack']</defaultValue>
+      <defaultValue>['Sauce Labs Fleece Jacket', 'Sauce Labs Bike Light', 'Sauce Labs Backpack', 'Sauce Labs Onesie']</defaultValue>
       <description></description>
       <id>0b5f5728-39e8-46e7-81ff-cd7dc84b526b</id>
       <masked>false</masked>
       <name>productNames</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>d232173f-0ece-4960-8504-39921cf9dc04</id>
+      <masked>false</masked>
+      <name>isRunAlone</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>b00c782f-1fef-47ee-a224-530c3064d448</id>
+      <masked>false</masked>
+      <name>isContinue</name>
    </variable>
 </TestCaseEntity>

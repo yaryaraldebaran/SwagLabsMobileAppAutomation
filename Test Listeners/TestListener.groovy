@@ -23,14 +23,26 @@ import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
 class TestListener {
+	Boolean isNeedReset = true 
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
 	@BeforeTestCase
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
-		println testCaseContext.getTestCaseId()
-		println testCaseContext.getTestCaseVariables()
+		Map variables = testCaseContext.getTestCaseVariables()
+		if (GlobalVariable.isJourney) {
+			if(isNeedReset) {
+				Mobile.callTestCase(findTestCase('Test Cases/Login Menu/Login'), null,FailureHandling.STOP_ON_FAILURE)
+			}else {
+				variables.put('isRunAlone',false)
+			}
+		}else {
+			if(variables.get('isRunAlone')) {
+				Mobile.callTestCase(findTestCase('Test Cases/Login Menu/Login'), null,FailureHandling.STOP_ON_FAILURE)
+			}
+		}
+		
 	}
 
 	/**
@@ -39,25 +51,13 @@ class TestListener {
 	 */
 	@AfterTestCase
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
-		println testCaseContext.getTestCaseId()
-		println testCaseContext.getTestCaseStatus()
+		if(GlobalVariable.isJourney) {
+			if(testCaseContext.getTestCaseStatus() == 'PASSED') {
+				isNeedReset = false
+			}else {
+				isNeedReset = true
+			}
+		}
 	}
 
-	/**
-	 * Executes before every test suite starts.
-	 * @param testSuiteContext: related information of the executed test suite.
-	 */
-	@BeforeTestSuite
-	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
-		println testSuiteContext.getTestSuiteId()
-	}
-
-	/**
-	 * Executes after every test suite ends.
-	 * @param testSuiteContext: related information of the executed test suite.
-	 */
-	@AfterTestSuite
-	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
-		println testSuiteContext.getTestSuiteId()
-	}
 }
