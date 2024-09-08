@@ -125,7 +125,8 @@ class Utils {
 				.moveTo(PointOption.point(endX, endY))
 				.release()
 				.perform()
-
+				
+		//click the start point 
 		touchAction.tap(PointOption.point(startX, startY))
 				.release()
 				.perform()

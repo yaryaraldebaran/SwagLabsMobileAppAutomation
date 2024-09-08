@@ -47,6 +47,12 @@
       <value></value>
       <variableId>d8fe963a-a4ea-46d9-88ae-360ee2c0dedc</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5d5f4b22-85d9-4a8b-bc5b-bef26162f478</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>['Sauce Labs Fleece Jacket', 'Sauce Labs Bike Light', 'Sauce Labs Backpack']</defaultValue>
       <description></description>
@@ -95,5 +101,12 @@
       <id>d8fe963a-a4ea-46d9-88ae-360ee2c0dedc</id>
       <masked>false</masked>
       <name>isIndividualRun</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>5d5f4b22-85d9-4a8b-bc5b-bef26162f478</id>
+      <masked>false</masked>
+      <name>isRunAlone</name>
    </variable>
 </TestCaseEntity>

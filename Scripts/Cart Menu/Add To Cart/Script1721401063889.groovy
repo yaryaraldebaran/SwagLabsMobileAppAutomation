@@ -24,9 +24,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 Utils util = new Utils()
-if (isRunAlone) {
-	Mobile.callTestCase(findTestCase('Test Cases/Login Menu/Login'), null)
-}
+//if (isRunAlone) {
+//	Mobile.callTestCase(findTestCase('Test Cases/Login Menu/Login'), null)
+//}
 
 
 for (productName in productNames) {

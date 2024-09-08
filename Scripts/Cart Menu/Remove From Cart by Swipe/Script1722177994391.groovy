@@ -32,8 +32,9 @@ for (productName in productNames) {
 	KeywordUtil.logInfo("product name : "+productName)
 	Mobile.scrollToText(productName)
 	//replace following swiped button by the one button with remove tag
+	Mobile.takeScreenshot()
 	utils.swipe(findTestObject('Object Repository/Cart Page/txtProductName',['productName':productName]))
-	Mobile.tap(findTestObject('Object Repository/Cart Page/btnTrash',['productName':productName]), 10)
+//	Mobile.tap(findTestObject('Object Repository/Cart Page/btnTrash',['productName':productName]), 10)
 }
 
 for (productName in productNames) {

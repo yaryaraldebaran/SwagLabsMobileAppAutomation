@@ -22,7 +22,9 @@ import org.openqa.selenium.Keys as Keys
 
 Utils util = new Utils()
 
-Mobile.callTestCase(findTestCase('Test Cases/Cart Menu/Add To Cart'), [('productNames') : productNames])
+Mobile.callTestCase(findTestCase('Test Cases/Cart Menu/Add To Cart'), [
+	('productNames') : productNames,
+	'isContinue':true])
 
 Mobile.scrollToText('CHECKOUT')
 
@@ -35,7 +37,7 @@ Mobile.setText(findTestObject('Object Repository/Checkout Page/inputFirstName'),
 Mobile.setText(findTestObject('Object Repository/Checkout Page/inputLastName'),lastName,5)
 Mobile.setText(findTestObject('Object Repository/Checkout Page/inputZipPostalCode'), zipCode, 5)
 
-List<String> arrayPrice = new List()
+ArrayList<String> arrayPrice = new ArrayList()
 
 
 Mobile.tap(findTestObject('Object Repository/Checkout Page/btnContinue'), 5)

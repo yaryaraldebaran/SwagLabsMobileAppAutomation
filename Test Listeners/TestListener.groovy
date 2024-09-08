@@ -33,6 +33,7 @@ class TestListener {
 		Map variables = testCaseContext.getTestCaseVariables()
 		if (GlobalVariable.isJourney) {
 			if(isNeedReset) {
+//				Mobile.startApplication(, false)
 				Mobile.callTestCase(findTestCase('Test Cases/Login Menu/Login'), null,FailureHandling.STOP_ON_FAILURE)
 			}else {
 				variables.put('isRunAlone',false)

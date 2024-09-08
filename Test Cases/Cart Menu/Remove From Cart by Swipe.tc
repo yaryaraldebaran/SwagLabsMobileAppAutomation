@@ -5,24 +5,6 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f119444a-fb50-4b6e-a1ad-8eca1db18354</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>b9c7b3bf-7458-4928-9caf-4fd61a4688d2</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>2f2401b5-4262-4e4f-b8ab-f38ea70fb665</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>bef5e19e-6fac-4c96-86f5-780807185b8a</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>['Sauce Labs Fleece Jacket', 'Sauce Labs Backpack']</defaultValue>
       <description></description>
